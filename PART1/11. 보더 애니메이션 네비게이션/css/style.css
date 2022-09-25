@@ -1,0 +1,69 @@
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+    font-weight: 300;
+    color: #222;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+.gnb {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    display: flex;
+}
+
+.gnb li {
+    /*box-sizing: border-box;
+    float: left;
+    width: 120px;*/
+    flex: 1;
+    text-align: center;
+}
+
+.gnb li a {
+    font-size: 14px;
+    position: relative;
+}
+
+.gnb li a:before {
+    content: '';
+    position: absolute;
+    background-color: dodgerblue;
+    height: 2px;
+    width: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    /* 정중앙 위치*/
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.gnb li a:hover:before {
+    width: 100%;
+}
