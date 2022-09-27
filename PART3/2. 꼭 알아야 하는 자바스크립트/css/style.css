@@ -1,0 +1,58 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+    font-weight: 300;
+    background: #fff;
+    color: #222;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 span {
+    color: crimson;
+}
+
+.container hr {
+    margin: 20px 0;
+    border: 0.5px solid #eee;
+
+}
+
+.login {
+    border: 1px solid #000;
+    padding: 30px;
+}
+
+.login input[type=text] {
+    padding: 10px;
+    border: 1px solid #eee;
+
+}
+
+.login button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
