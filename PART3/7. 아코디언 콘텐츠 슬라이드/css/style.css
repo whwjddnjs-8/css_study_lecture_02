@@ -1,0 +1,130 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* Goggle Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #222;
+    margin: 0;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+/*Layout*/
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section article {
+    /*    border: 1px solid red;*/
+    width: 980px;
+    height: 500px;
+}
+
+.heading {
+    text-align: center;
+    /*    border: 1px solid blue;*/
+}
+
+.heading span {
+    color: crimson;
+    font-size: 20px;
+}
+
+.heading h1 {
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.heading h1 em {
+    font-style: normal;
+    position: relative;
+}
+
+.heading h1 em:after {
+    position: absolute;
+    content: url(../images/logo-kakao.png);
+    right: -30px;
+    top: -25px;
+}
+
+.content {}
+
+.content > div {
+    /*    border: 1px solid green;*/
+    width: 50%;
+    float: left;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.accordion {}
+
+.title {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding-left: 15px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.title:after {
+    content: '\f105';
+    font-family: fontawesome;
+    float: right;
+    margin-right: 5px;
+    margin-top: 4px;
+    transition: 0.3s;
+}
+
+.title:hover,
+.title.active {
+    color: #fff;
+    background-color: #203049;
+}
+
+.title.active:after {
+    transform: rotate(90deg);
+    color: orange;
+}
+
+
+.desc {
+    padding: 15px;
+    line-height: 1.6em;
+    display: none;
+}
+
+.desc.active {
+    display: block;
+}
+
+.image img {
+    transition: 0.5s;
+}
